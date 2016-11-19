@@ -1,0 +1,10 @@
+<div style="padding: 20px;" [hidden]="!showBid" (click)="toggleBid()">
+    <md-card>
+        <div id="target" style="text-align: center; font-size: 9em;">
+            {{this.bid}}
+        </div>
+    </md-card>
+</div>
+<md-grid-list cols="3" gutterSize="4" rowHeight="1:1" [hidden]="showBid">
+   <md-grid-tile *ngFor="let tile of deck; let i = index" (click)="setBid(tile, i)" [id]="'index'+i">{{tile}}</md-grid-tile>
+</md-grid-list>
