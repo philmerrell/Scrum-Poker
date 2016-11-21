@@ -1,11 +1,7 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Router, NavigationEnd, Event as NavigationEvent } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { PokerService } from '../poker.service';
 
-import 'rxjs/add/operator/filter';
-
-declare var ramjet: any;
-declare var window: any;
 
 @Component({
   selector: 'app-poker',
